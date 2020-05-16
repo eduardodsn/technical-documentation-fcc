@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Roboto&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <!-- 
+        font-family: 'Fira Mono', monospace;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
+     -->
     <title>Technical Documentation</title>
 </head>
 <body>
@@ -124,38 +130,38 @@
                     <p>Python has the following data types built-in by default, in these categories:</p>
                     
                     <div class="responsive-table">
-                        <table style="width: 50%;">
+                        <table border=1 style="width: 50%;">
                             <tr style="text-align: left;">
                                 <th>Type</th>
                                 <th>Syntax</th>
                             </tr>
                             <tr>
                                 <td>Text Type</td>
-                                <td><strong>str</strong></td>
+                                <td>str</td>
                             </tr>
                             <tr>
                                 <td>Numeric Types</td>
-                                <td><strong>int</strong>, <strong>float</strong>, <strong>complex</strong></td>
+                                <td>int, float, complex</td>
                             </tr>
                             <tr>
                                 <td>Sequence Types</td>
-                                <td><strong>list</strong>, <strong>tuple</strong>, <strong>range</strong></td>
+                                <td>list, tuple, range</td>
                             </tr>
                             <tr>
                                 <td>Mapping Type</td>
-                                <td><strong>dict</strong></td>
+                                <td>dict</td>
                             </tr>
                             <tr>
                                 <td>Set Types</td>
-                                <td><strong>set</strong>, <strong>frozenset</strong></td>
+                                <td>set, frozenset</td>
                             </tr>
                             <tr>
                                 <td>Boolean Type</td>
-                                <td><strong>bool</strong></td>
+                                <td>bool</td>
                             </tr>
                             <tr>
                                 <td>Binary Type</td>
-                                <td><strong>bytes</strong>, <strong>bytearray</strong>, <strong>memoryview</strong></td>
+                                <td>bytes, bytearray, memoryview</td>
                             </tr>
                         </table>
                     </div>
@@ -163,7 +169,7 @@
 
                 <div class="content-container">
                     <h2>Getting the Data Type</h2>
-                    <p>You can get the data type of any object by using the <strong>type()</strong> function:</p>
+                    <p>You can get the data type of any object by using the <span>type()</span> function:</p>
 
                     <div class="example-box">
                         <h3>Example</h3>
@@ -184,9 +190,9 @@
                     <h2>Python Numbers</h2>
                     <p>There are three numeric types in Python:</p>
                     <ul>
-                        <li><strong>int</strong></li>
-                        <li><strong>float</strong></li>
-                        <li><strong>complex</strong></li>
+                        <li>int</li>
+                        <li>float</li>
+                        <li>complex</li>
                     </ul>
 
                     <p>Variables of numeric types are created when you assign a value to them:</p>
@@ -199,7 +205,7 @@
                         </code>
                     </div>
 
-                    <p>To verify the type of any object in Python, use the <strong>type()</strong> function:</p>
+                    <p>To verify the type of any object in Python, use the <span>type()</span> function:</p>
                     <div class="example-box">
                         <h3>Example</h3>
                         <code>
@@ -246,21 +252,21 @@
                             print(type(y))
                             print(type(z))
                         </code>
+                    </div>
+                    
+                    <p>Float can also be scientific numbers with an "e" to indicate the power of 10.</p>
+                    <div class="example-box">
+                        <h3>Example</h3>
+                        <p>Floats:</p>
+                        <code>
+                            x = 35e3
+                            y = 12E4
+                            z = -87.7e100
 
-                        <p>Float can also be scientific numbers with an "e" to indicate the power of 10.</p>
-                        <div class="example-box">
-                            <h3>Example</h3>
-                            <p>Floats:</p>
-                            <code>
-                                x = 35e3
-                                y = 12E4
-                                z = -87.7e100
-
-                                print(type(x))
-                                print(type(y))
-                                print(type(z))
-                            </code>
-                        </div>
+                            print(type(x))
+                            print(type(y))
+                            print(type(z))
+                        </code>
                     </div>
                 </div>
 
@@ -291,16 +297,16 @@
                     <h2>Python Conditions and If statements</h2>
                     <p>Python supports the usual logical conditions from mathematics:</p>
                     <ul>
-                        <li>Equals: <strong>a == b</strong></li>
-                        <li>Not Equals: <strong>a != b</strong></li>
-                        <li>Less than: <strong>a &lt; b</strong></li>
-                        <li>Less than or equal to: <strong>a &lt;= b</strong></li>
-                        <li>Greater than: <strong>a &gt; b</strong></li>
-                        <li>Greater than or equal to: <strong>a &gt;= b</strong></li>
+                        <li>Equals: a == b</li>
+                        <li>Not Equals: a != b</li>
+                        <li>Less than: a &lt; b</li>
+                        <li>Less than or equal to: a &lt;= b</li>
+                        <li>Greater than: a &gt; b</li>
+                        <li>Greater than or equal to: a &gt;= b</li>
                     </ul>
                     <p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
 
-                    <p>An "if statement" is written by using the <strong>if</strong> keyword.</p>
+                    <p>An "if statement" is written by using the <span>if</span> keyword.</p>
                     <div class="example-box">
                         <h3>Example</h3>
                         <p>If statement:</p>
@@ -312,14 +318,14 @@
                         </code>
                     </div>
                     <p>
-                        In this example we use two variables, <strong>a</strong> and <strong>b</strong>, which are used as part of the if statement to test whether <strong>b</strong> is greater than <strong>a</strong>. As <strong>a</strong> is 33, and <strong>b</strong> is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".
+                        In this example we use two variables, <span>a</span> and <span>b</span>, which are used as part of the if statement to test whether <span>b</span> is greater than <span>a</span>. As <span>a</span> is 33, and <span>b</span> is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".
                     </p>
                 </div>
 
                 <div class="content-container">
                     <h2>Elif</h2>
                     <p>
-                        The <strong>elif</strong> keyword is pythons way of saying "if the previous conditions were not true, then try this condition".
+                        The <span>elif</span> keyword is pythons way of saying "if the previous conditions were not true, then try this condition".
                     </p>
                     <div class="example-box">
                         <h3>Example</h3>
@@ -333,13 +339,13 @@
                         </code>
                     </div>
                     <p>
-                        In this example <strong>a</strong> is equal to <strong>b</strong>, so the first condition is not true, but the <strong>elif</strong> condition is true, so we print to screen that "a and b are equal".
+                        In this example <span>a</span> is equal to <span>b</span>, so the first condition is not true, but the <span>elif</span> condition is true, so we print to screen that "a and b are equal".
                     </p>
                 </div>
 
                 <div class="content-container">
                     <h2>Else</h2>
-                    <p>The <strong>else</strong> keyword catches anything which isn't caught by the preceding conditions.</p>
+                    <p>The <span>else</span> keyword catches anything which isn't caught by the preceding conditions.</p>
                     <div class="example-box">
                         <h3>Example</h3>
                         <code>
@@ -354,7 +360,7 @@
                         </code>
                     </div>
                     <p>
-                        In this example <strong>a</strong> is greater than <strong>b</strong>, so the first condition is not true, also the <strong>elif</strong> condition is not true, so we go to the <strong>else</strong> condition and print to screen that "a is greater than b".
+                        In this example <span>a</span> is greater than <span>b</span>, so the first condition is not true, also the <span>elif</span> condition is not true, so we go to the <span>else</span> condition and print to screen that "a is greater than b".
                     </p>
                 </div>
             </article>
@@ -366,14 +372,14 @@
                 <h2>Python Loops</h2>
                 <p>Python has two primitive loop commands:</p>
                 <ul>
-                    <li><strong>while</strong> loops</li>
-                    <li><strong>for</strong> loops</li>
+                    <li>while loops</li>
+                    <li>for loops</li>
                 </ul>
             </div>
 
             <div class="content-container">
                 <h2>The while Loop</h2>
-                <p>With the <strong>while</strong> loop we can execute a set of statements as long as a condition is true.</p>
+                <p>With the <span>while</span> loop we can execute a set of statements as long as a condition is true.</p>
                 <div class="example-box">
                     <h3>Example</h3>
                     <p>Print i as long as i is less than 6:</p>
@@ -389,7 +395,7 @@
 
             <div class="content-container">
                 <h2>The break Statement</h2>
-                <p>With the <strong>break</strong> statement we can stop the loop even if the while condition is true:</p>
+                <p>With the <span>break</span> statement we can stop the loop even if the while condition is true:</p>
 
                 <div class="example-box">
                     <h3>Example</h3>
@@ -409,13 +415,13 @@
             <div class="content-container">
                 <h2>The for Loops</h2>
                 <p>
-                    A <strong>for</strong> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+                    A <span>for</span> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
                 </p>
                 <p>
-                    This is less like the <strong>for</strong> keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+                    This is less like the <span>for</span> keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
                 </p>
                 <p>
-                    With the <strong>for</strong> loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+                    With the <span>for</span> loop we can execute a set of statements, once for each item in a list, tuple, set etc.
                 </p>
                 <div class="example-box">
                     <h3>Example</h3>
@@ -426,16 +432,16 @@
                         &emsp;&emsp;print(x)
                     </code>
                 </div>
-                <p>The <strong>for</strong> loop does not require an indexing variable to set beforehand.</p>
+                <p>The <span>for</span> loop does not require an indexing variable to set beforehand.</p>
             </div>
 
             <div class="content-container">
                 <h2>The range() Function</h2>
                 <p>
-                    To loop through a set of code a specified number of times, we can use the <strong>range()</strong> function.
+                    To loop through a set of code a specified number of times, we can use the <span>range()</span> function.
                 </p>
                 <p>
-                    The <strong>range()</strong> function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
+                    The <span>range()</span> function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
                 </p>
                 <div class="example-box">
                     <h3>Example</h3>
@@ -447,7 +453,7 @@
                 </div>
 
                 <p>
-                    The <strong>range()</strong> function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: <strong>range(2, 6)</strong>, which means values from 2 to 6 (but not including 6):
+                    The <span>range()</span> function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: <span>range(2, 6)</span>, which means values from 2 to 6 (but not including 6):
                 </p>
 
                 <div class="example-box">
