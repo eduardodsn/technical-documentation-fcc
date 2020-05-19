@@ -70,7 +70,7 @@
     .hamburguer {
         position: relative;
         top: 2px;
-        right: -30%;
+        right: -20%;
         display: block;
         background-color: #FFF;
         width: 30px;
@@ -129,6 +129,14 @@
     #navbar ul li {
         width: 100%;
         margin-left: 0;
+    }
+    
+    #navbar a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
 
     .nav-link {
