@@ -17,6 +17,7 @@ body {
     float: right;
     background-color: #FFF;
     padding-left: 20px;
+    overflow: hidden;
 }
 
 #Reference {
@@ -55,7 +56,7 @@ body {
 }
 
 .example-box {
-    width: 60%;
+    width: 380px;
     height: auto;
     background-color: #EEEEEE;
     border-radius: 3px;
@@ -95,4 +96,28 @@ table td {
 
 span {
     background-color: #EEEEEE;
+}
+
+@media only screen and (max-width: 607px) {
+    .main-section {
+        width: 100%;
+    }
+
+    .main-section:nth-child(1) {
+        margin-top: 100px;
+    }
+
+    .example-box {
+        width: 300px;
+    }
+
+    .responsive-table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-container {
+        padding: 0 10px 0 30px;
+    }
 }
