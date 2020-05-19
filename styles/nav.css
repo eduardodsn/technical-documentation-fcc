@@ -43,12 +43,12 @@
     outline-style: none;
 }
 
-#navbar li:hover {
-    background-color: #000;
-}
-
 #check {
     display: none;
+}
+
+#navbar li:hover {
+    background-color: #000;
 }
 
 /* MEDIA QUERIES */
